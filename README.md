@@ -22,7 +22,7 @@ Web Browser (Google Chrome recommended)
 
 ## Live Demo
 
-[Live Demo Link]()
+[Live Demo Link](https://peteugwu.github.io/html-Capstone/)
 
 ## How to Run
 
