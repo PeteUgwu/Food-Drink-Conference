@@ -26,7 +26,7 @@ Web Browser (Google Chrome recommended)
 
 ## How to Run
 
-[linkToSource](https://github.com/PeteUgwu/First-Capstone-Project/tree/main)
+[linkToSource](https://github.com/PeteUgwu/html-Capstone)
 
 To run the project do the following:
 
