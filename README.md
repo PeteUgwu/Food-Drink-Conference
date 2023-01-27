@@ -26,7 +26,7 @@ Web Browser (Google Chrome recommended)
 
 ## How to Run
 
-[linkToSource](https://github.com/PeteUgwu/html-Capstone)
+[linkToSource](https://peteugwu.github.io/Food-Drink-Conference/)
 
 To run the project do the following:
 
