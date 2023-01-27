@@ -22,11 +22,11 @@ Web Browser (Google Chrome recommended)
 
 ## Live Demo
 
-[Live Demo Link](https://peteugwu.github.io/html-Capstone/)
+[Live Demo Link](https://peteugwu.github.io/Food-Drink-Conference/)
 
 ## How to Run
 
-[linkToSource](https://peteugwu.github.io/Food-Drink-Conference/)
+[linkToSource](https://github.com/PeteUgwu/Food-Drink-Conference)
 
 To run the project do the following:
 
@@ -42,7 +42,7 @@ To run the project do the following:
 
 - GitHub: [@PeteUgwu](https://github.com/PeteUgwu)
 - Twitter: [@Petrus4Charles](https://twitter.com/Petrus4Charles)
-- LinkedIn: [/peter-ugwu-15a3a724b/](https://www.linkedin.com/in/peter-ugwu-15a3a724b/)
+- LinkedIn: [/peteugwu](https://www.linkedin.com/in/peteugwu)
 
 ## 🤝 Contributing
 
