@@ -8,29 +8,25 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Lato&display=swap"
-      rel="stylesheet"
-    />
   </head>
   <body>
-    <header id="Home">
+    <header>
       <nav id="top-nav">
-        <img src="./images/facebook.png" alt="">
-        <img src="./images/twitter.png" alt="">
+        <a href="https://web.facebook.com/CeePetrus"><img src="./images/facebook.png" alt=""></a>
+        <a href="https://twitter.com/Petrus4Charles"><img src="./images/twitter.png" alt=""></a>
         <h6>English</h6>
         <h6>My page</h6>
         <h6>Logout</h6>
       </nav>
     <div class=" flex nav-bar">
-        <a href="#Home"><img src="./images/gtco_logo2.png" alt="Logo"></a>
+        <a href="/"><img src="./images/gtco_logo2.png" alt="Logo"></a>
         <ul class="flex nav-list-item">
             <li class="nav-item nav-about"><a href="about.html">About</a></li>
-            <li class="nav-item nav-color"><a href="#">Exhibition</a></li>
-            <li class="nav-item nav-color"><a href="#">Join</a></li>
-            <li class="nav-item nav-color"><a href="#">Sponsor</a></li>
+            <li class="nav-item nav-color"><a href="#main-program">Program</a></li>
+            <li class="nav-item nav-color"><a href="#partner">Sponsor</a></li>
             <li class="nav-item nav-color"><a href="#">Schedules</a></li>
-            <li class="nav-item nav-border"><a href="#program">THE CHEFS</a></li>
+            <li class="nav-item nav-color"><a href="#">Join</a></li>
+            <li class="nav-item nav-border"><a href="#featured-chefs">THE CHEFS</a></li>
         </ul>
     </div>
     </header>
@@ -69,31 +65,33 @@
     <section id="main-program" class="wrap-program">
         <div class="program-list">
         <h2>Main Program<hr class="hr"></h2>
-        <ul class="bg-program">
-            <li><img src="./images/program_icon_01.png" alt="Lecture"></li>
-            <li><h3>Lecture</h3></li>
-            <li> <p>Listen to lectures from speakers from around the world and learn about the GTCO Food and Drink </p></li>
-        </ul>
-        <ul class="bg-program">
-            <li><img src="./images/program_icon_02.png" alt="Exhibition"></li>
-            <li><h3>Exhibition</h3></li>
-            <li><p>Let's meet Chefs from various part of the country who share the open methods and techniques.</p></li>
-        </ul>
-        <ul class="bg-program">
-            <li><img src="./images/program_icon_03.png" alt="Arena"></li>
-            <li><h3>Kids Arena</h3></li>
-            <li><p>An event for the kids. Children will have the opportunity to engage in fun and educational activities.</p></li>
-        </ul>
-        <ul class="bg-program program-item">
-            <li><img src="./images/program_icon_04.png" alt="Classes"></li>
-            <li><h3>Classes</h3></li>
-            <li><p>Fostering knowledge and capacity building for all. Featuring cooking lessons from renowed chefs.</p></li>
-        </ul>
-        <ul class="bg-program">
-            <li><img src="./images/program_icon_05.png" alt="Restuarant"></li>
-            <li><h3>Restuarant</h3></li>
-            <li><p>Enjoy a variety of tastings from casual to gourmet traditional Nigerian and continental dishes</p></li>
-        </ul>
+        <div class="program-container">
+          <div class="bg-program">
+            <img src="./images/program_icon_01.png" alt="Lecture">
+            <h3>Lecture</h3>
+             <p>Listen to lectures from speakers from around the world and learn about the GTCO Food and Drink </p>
+        </div>
+        <div class="bg-program">
+            <img src="./images/program_icon_02.png" alt="Exhibition">
+            <h3>Exhibition</h3>
+            <p>Let's meet Chefs from various part of the country who share the open methods and techniques.</p>
+        </div>
+        <div class="bg-program">
+            <img src="./images/program_icon_03.png" alt="Arena">
+            <h3>Kids Arena</h3>
+            <p>An event for the kids. Children will have the opportunity to engage in fun and educational activities.</p>
+        </div>
+        <div class="bg-program program-item">
+            <img src="./images/program_icon_04.png" alt="Classes">
+            <h3>Classes</h3>
+            <p>Fostering knowledge and capacity building for all. Featuring cooking lessons from renowed chefs.</p>
+        </div>
+        <div class="bg-program">
+            <img src="./images/program_icon_05.png" alt="Restuarant">
+            <h3>Restuarant</h3>
+            <p>Enjoy a variety of tastings from casual to gourmet traditional Nigerian and continental dishes</p>
+        </div>
+        </div>
         <button class="join-btn"><a href="#">Register as a Chef</a></button> 
         <h5 class="see-whole"><a>SEE THE WHOLE PROGRAM</a></h5>
         </div>
@@ -101,7 +99,7 @@
     </section>
 <!--     </div> -->
 
-    <section class="featured-speakers">
+    <section class="featured-speakers" id="featured-chefs">
       <h2>Featured Chefs <hr class="hr"></h2>
       <div id="featured-speakers">
        
@@ -128,10 +126,10 @@
         </ul>
       </div>
       <footer id="footer">
+        <span>
         <a href="/"><img src="./images/gtco_logo.png" alt="CC Footer Logo" /></a>
-        <ul>
-          <li>2015 Creative Commons Korea. Some Rights Reserved.</li>
-        </ul>
+        </span>
+        <span>CopyRight of Charlie 2022. All RIght Reserved.</span>
       </footer>
     <script src="script.js"></script>
     <script
