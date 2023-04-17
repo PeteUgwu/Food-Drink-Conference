@@ -104,7 +104,6 @@ a {
   border: none;
   scroll-behavior: initial;
   touch-action: none;
-  -ms-touch-action: none;
   overflow-y: hidden;
 }
 
