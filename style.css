@@ -1,4 +1,8 @@
-/* @import url("https://fonts.googleapis.com/css2?family=Lato&display=swap"); */
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   font-family: "Lato", sans-serif;
@@ -27,18 +31,19 @@ body {
   display: none;
 }
 
-.nav-list a {
-  padding: 8px 8px 8px 32px;
+a {
   text-decoration: none;
-  font-size: 25px;
   color: #fff;
+  transition: all 0.3s;
+}
+
+.nav-list a {
+  font-size: 25px;
+  padding: 8px 8px 8px 32px;
   display: block;
-  transition: 0.3s;
 }
 
 .join-btn a {
-  color: #fff;
-  text-decoration: none;
   padding: 1rem 2rem;
 }
 
@@ -47,7 +52,7 @@ body {
   padding-top: 0;
 }
 
-.nav-list a:hover {
+.nav-item a:hover {
   color: #d3d3d3;
 }
 
@@ -83,7 +88,7 @@ body {
   padding-top: 60px;
 }
 
-.nav-list .closebtn {
+.closebtn {
   position: absolute;
   top: 0;
   right: 25px;
@@ -99,7 +104,6 @@ body {
   border: none;
   scroll-behavior: initial;
   touch-action: none;
-  -ms-touch-action: none;
   overflow-y: hidden;
 }
 
@@ -140,7 +144,7 @@ h1 {
   text-align: justify;
 }
 
-#main {
+main {
   width: 90%;
 }
 
@@ -161,7 +165,6 @@ h1 {
 #main-program {
   text-align: center;
   align-items: center;
-  width: 100%;
 }
 
 .hr {
@@ -182,15 +185,20 @@ h1 {
   padding-top: 2rem;
 }
 
+.program-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .bg-program {
-  display: grid;
-  grid-template-columns: 1fr 1fr 2.5fr;
+  display: flex;
+  align-items: center;
   background: rgba(255, 255, 255, 0.1);
+  width: 100%;
   margin: 0.5rem 0% 0% 0%;
   text-align: left;
-  align-items: center;
   padding: 0 0.1rem 0 0;
-  width: 100%;
   line-height: 1.5;
 }
 
@@ -203,15 +211,16 @@ h1 {
   text-align: center;
 }
 
-.bg-program li h3 {
+.bg-program h3 {
   color: #ec5242;
   font-size: 0.875rem;
   text-align: left;
   padding: 0%;
-  width: 100%;
+  width: 60%;
+  margin-left: 0.5rem;
 }
 
-.bg-program li p {
+.bg-program p {
   font-size: 0.75rem;
   color: #fff;
   margin-left: 0%;
@@ -253,7 +262,6 @@ h1 {
 
 .speaker-info img {
   width: 100%;
-  height: auto;
 }
 
 .speaker-info ul {
@@ -357,11 +365,6 @@ div .img-logo {
   background-color: #fff;
   padding: 0 5%;
   width: 90%;
-}
-
-.past-summits img {
-  width: 90%;
-  height: auto;
 }
 
 .festivals {
@@ -511,6 +514,16 @@ div .img-logo {
 }
 
 @media screen and (min-width: 768px) {
+  ::-webkit-scrollbar {
+    width: 10px;
+    height: 100px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 5px;
+  }
+
   #top-nav {
     display: flex;
     justify-content: flex-end;
@@ -522,12 +535,10 @@ div .img-logo {
 
   .speaker-info img {
     width: 40%;
-    height: auto;
   }
 
   .partner img {
     width: 100%;
-    height: auto;
     align-items: center;
     filter:
       brightness(0) invert() opacity(0.2)
@@ -535,8 +546,7 @@ div .img-logo {
   }
 
   .nav-bar a img {
-    width: 60%;
-    height: auto;
+    width: 90%;
   }
 
   #top-nav img {
@@ -685,8 +695,7 @@ div .img-logo {
 
   .program-list {
     width: 80%;
-    padding: 0 10%;
-    margin: 0;
+    margin: 0 auto;
   }
 
   .program-list h2 {
@@ -701,9 +710,12 @@ div .img-logo {
   }
 
   #main-program {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
     text-align: center;
     padding-bottom: 2rem;
-    margin: 0 auto;
+    margin: 0;
     height: auto;
     padding-top: 1rem;
   }
@@ -712,15 +724,19 @@ div .img-logo {
     border: 3px solid #fff;
   }
 
-  #main-program .bg-program {
-    width: calc(17% - 0.0075em);
-    height: auto;
+  .bg-program {
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    display: inline-block;
-    margin: 2rem 0 0 0;
-    padding: 0.5rem 0.4rem;
+    background: rgba(255, 255, 255, 0.1);
+    width: 100%;
     text-align: center;
-    line-height: 1.5;
+  }
+
+  .program-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 0.4rem;
   }
 
   .see-whole {
@@ -738,7 +754,7 @@ div .img-logo {
     font-size: 12px;
   }
 
-  .bg-program li h3 {
+  .bg-program h3 {
     color: #ec5242;
     font-size: 1.3rem;
     font-weight: bold;
@@ -748,7 +764,7 @@ div .img-logo {
 
   .speaker-info {
     display: inline-flex;
-    flex-direction: row;
+    place-items: start;
     width: calc(42% - 10px);
     padding: 2rem 0 0;
     margin: 0;
@@ -758,11 +774,8 @@ div .img-logo {
     padding-left: 2rem;
   }
 
+  .before-h1,
   .featured-speakers button {
-    display: none;
-  }
-
-  .before-h1 {
     display: none;
   }
 

@@ -93,7 +93,6 @@ const loadSpeakers = (item) => {
   });
   speakers.innerHTML = display;
 };
-// loadSpeakers(data);
 window.addEventListener('DOMContentLoaded', () => {
   loadSpeakers(data);
 });
