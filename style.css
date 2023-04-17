@@ -96,6 +96,10 @@ a {
   margin-left: 50px;
 }
 
+.menu-about {
+  background-color: #d3d3d3;
+}
+
 .openbtn {
   font-size: 20px;
   cursor: pointer;
@@ -105,6 +109,7 @@ a {
   scroll-behavior: initial;
   touch-action: none;
   overflow-y: hidden;
+  background-color: none;
 }
 
 ul li {
